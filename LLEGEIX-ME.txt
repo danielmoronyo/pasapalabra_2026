@@ -1,0 +1,21 @@
+PASSAPARAULA VALENCIÀ — versió HTML, CSS i JavaScript
+=====================================================
+
+Com jugar
+  Obri el fitxer index.html amb qualsevol navegador (doble clic).
+  No cal instal·lar res ni cap servidor.
+
+Fitxers
+  index.html          La pàgina amb les tres pantalles (inici, joc i final).
+  css/styles.css      Colors, tipografia i disseny del rosco.
+  js/preguntes.js     Les preguntes de cada lletra. Ací pots afegir-ne o canviar-ne.
+  js/joc.js           Les regles: temps, passar paraula, correcció i marcador.
+  images/logo.svg     Logotip i icona de la pestanya.
+
+Afegir una pregunta
+  Obri js/preguntes.js, busca la lletra i afig una línia com aquesta:
+  { letter: "A", type: "starts", clue: "La pista...", answers: ["Resposta", "Variant"] },
+  type: "starts" = comença per la lletra; "contains" = conté la lletra.
+
+Els millors marcadors es guarden en el navegador on es juga.
+Les fonts es carreguen de Google Fonts; sense Internet es veuran amb una font del sistema.
